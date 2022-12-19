@@ -103,3 +103,11 @@ sudo nano .bashrc
 ```sh
 source .bashrc
 ```
+
+&nbsp;
+
+## 6. Install `node`
+
+```sh
+nvm install --lts
+```
