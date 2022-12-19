@@ -84,4 +84,22 @@ Setup `bash` as default shell:
 chsh -s <your-bash-command-path>
 ```
 
+&nbsp;
 
+## 5. Install `nvm`
+
+Command:
+
+```sh
+brew install nvm
+```
+
+Run `nvm`:
+
+```sh
+sudo nano .bashrc
+```
+
+```sh
+source .bashrc
+```
