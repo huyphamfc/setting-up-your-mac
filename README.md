@@ -137,3 +137,13 @@ Config `VSCode` as default text editor:
 ```sh
 git config --global core.editor "code --wait"
 ```
+
+&nbsp;
+
+## 8. Install VSCode
+
+Command:
+
+```sh
+brew install --cask visual-studio-code
+```
