@@ -108,6 +108,32 @@ source .bashrc
 
 ## 6. Install `node`
 
+Command:
+
 ```sh
 nvm install --lts
+```
+
+&nbsp;
+
+## 7. Install `git`
+
+Command:
+
+```sh
+brew install git
+```
+
+Config account:
+
+```sh
+git config --global user.name <your-name>
+
+git config --global user.email <your-email>
+```
+
+Config `VSCode` as default text editor:
+
+```sh
+git config --global core.editor "code --wait"
 ```
