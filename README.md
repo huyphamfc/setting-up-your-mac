@@ -46,7 +46,7 @@ which bash
 
 ## 4. Setup `bash` shell
 
-**Shell** is the layer of programming that understands and executes the commands of the user. 
+**Shell** is the layer of programming that understands and executes the commands of the user.
 
 Determine the current shell:
 
