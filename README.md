@@ -1,8 +1,8 @@
-# Setting Up Your Mac
+# Setting Up Your New Mac
 
 &nbsp;
 
-## 1. Install XCode
+## 1. Install `XCode`
 
 Command:
 
@@ -12,7 +12,7 @@ xcode-select --install
 
 &nbsp;
 
-## 2. Install Homebrew
+## 2. Install `Homebrew`
 
 Command:
 
@@ -28,65 +28,7 @@ This script installs `Homebrew` to its default.
 
 &nbsp;
 
-## 3. Install bash
-
-Command:
-
-```sh
-brew install bash
-```
-
-Locate `bash` command path:
-
-```sh
-which bash
-```
-
-&nbsp;
-
-## 4. Setup `bash` shell
-
-**Shell** is the layer of programming that understands and executes the commands of the user.
-
-Determine the current shell:
-
-```sh
-echo $SHELL
-```
-
-List the available shells:
-
-```sh
-cat /etc/shells
-```
-
-Insert `bash` command path to the shell list:
-
-```sh
-sudo nano /etc/shells/
-```
-
-- macOS Intel:
-
-```sh
-/usr/local/bin/bash
-```
-
-- macOS Apple Silicon:
-
-```sh
-/opt/homebrew/bin/bash
-```
-
-Setup `bash` as default shell:
-
-```sh
-chsh -s <your-bash-command-path>
-```
-
-&nbsp;
-
-## 5. Install `nvm`
+## 3. Install `nvm`
 
 Command:
 
@@ -94,19 +36,37 @@ Command:
 brew install nvm
 ```
 
-Run `nvm`:
+Create NVM's working directory if it doesn't exist:
 
 ```sh
-sudo nano .bashrc
+mkdir ~/.nvm
+```
+
+Config `Zsh`:
+
+```sh
+# open the configuration file
+sudo nano ~/.zshrc
 ```
 
 ```sh
-source .bashrc
+export NVM_DIR="$HOME/.nvm"
+
+# load nvm
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+
+# load nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+```
+
+```sh
+# reload the configuration file
+source ~/.zshrc
 ```
 
 &nbsp;
 
-## 6. Install `node`
+## 4. Install `node`
 
 Command:
 
@@ -116,7 +76,7 @@ nvm install --lts
 
 &nbsp;
 
-## 7. Install `git`
+## 5. Install `Git`
 
 Command:
 
@@ -124,7 +84,7 @@ Command:
 brew install git
 ```
 
-Config account:
+Config an account:
 
 ```sh
 git config --global user.name <your-name>
@@ -140,10 +100,12 @@ git config --global core.editor "code --wait"
 
 &nbsp;
 
-## 8. Install VSCode
+## 6. Install `VSCode`
 
 Command:
 
 ```sh
 brew install --cask visual-studio-code
 ```
+
+Integrate `Zsh`: `Command` + `Shift` + `P` &rarr; `Terminal: Select Default Profile` &rarr; `zsh`
