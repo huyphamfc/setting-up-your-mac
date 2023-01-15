@@ -42,6 +42,12 @@ Create NVM's working directory if it doesn't exist:
 mkdir ~/.nvm
 ```
 
+Create Zsh configuration file - `.zshrc`:
+
+```sh
+touch ~.zshrc
+```
+
 Config `Zsh`:
 
 ```sh
