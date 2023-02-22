@@ -115,3 +115,19 @@ brew install --cask visual-studio-code
 ```
 
 Integrate `Zsh`: `Command` + `Shift` + `P` &rarr; `Terminal: Select Default Profile` &rarr; `zsh`
+
+&nbsp;
+
+## 7. Dock Auto Hide Delay Float
+
+Command:
+
+```sh
+defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+```
+
+To revert back to the default value:
+
+```sh
+defaults write com.apple.dock autohide-delay -float 0.5; defaults write com.apple.dock autohide-time-modifier -int 0.5 ;killall Dock
+```
